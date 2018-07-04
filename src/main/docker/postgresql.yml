@@ -1,0 +1,11 @@
+version: '2'
+services:
+    citydata-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/CityData/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=CityData
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
